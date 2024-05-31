@@ -1,0 +1,105 @@
+.calculator {
+    height: 600px;
+    width: 400px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.saved-item {
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    text-align: left;
+}
+
+#saved {
+    color: white;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 400px;
+    height: 600px;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+}
+
+#close {
+    position: fixed;
+    border-radius: 5px;
+    width: 24px;
+    height: 24px;
+    background-color: aqua;
+    color: black;
+    margin-top: 10px;
+    margin-left: 165px;
+    font-size: 16px;
+}
+
+.display {
+    padding-top: 10px;
+    text-align: center;
+}
+
+#display {
+    height: 60px;
+    width: 95%;
+    font-size: 2em;
+    color: black;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: unset;
+    border-radius: 100%;
+    width: 77px;
+    height: 77px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+button:hover, button:focus {
+    background-color: #090;
+}
+
+button:active {
+    background-color: #070;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.number-buttons {
+    width: 240px;
+    text-align: center;
+}
+
+.operator-buttons {
+    width: 77px;
+    text-align: right;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.stacked {
+    width: 77px;
+}

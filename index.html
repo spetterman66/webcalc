@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="calculator.js" defer></script>
+    <meta name="keywords" content="calculator, webcalc, web, calc, web calculator, web calc">
+    <meta name="description" content="A really simple web calculator">
+    <meta name="author" content="Ryan (github.com/spetterman66)">
+    <meta name="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0e0e0e">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@RyanBremer17">
+    <meta name="twitter:creator" content="@RyanBremer17">
+    <meta property="og:url" content="webcalc.vercel.app">
+    <meta property="og:title" content="WebCalc - Simple web calculator">
+    <meta property="og:description" content="A really simple web calculator">
+    <title>WebCalc</title>
+</head>
+
+<body onload="init()">
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="display" disabled>
+        </div>
+        <div class="buttons">
+            <div class="stacked">
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="deleteLast()">DEL</button>
+                <button onclick="save()">💾</button>
+                <button onclick="viewSaved()">📂</button>
+            </div>
+            <div class="number-buttons">
+                <button onclick="append('7')">7</button>
+                <button onclick="append('8')">8</button>
+                <button onclick="append('9')">9</button>
+                <button onclick="append('4')">4</button>
+                <button onclick="append('5')">5</button>
+                <button onclick="append('6')">6</button>
+                <button onclick="append('1')">1</button>
+                <button onclick="append('2')">2</button>
+                <button onclick="append('3')">3</button>
+                <button onclick="append('0')">0</button>
+                <button onclick="append('.')">.</button>
+                <button onclick="calculate()">=</button>
+            </div>
+            <div class="operator-buttons">
+                <button onclick="append('+')">+</button>
+                <button onclick="append('-')">-</button>
+                <button onclick="append('*')">*</button>
+                <button onclick="append('/')">/</button>
+            </div>
+        </div>
+        <div id="saved">
+            <button id="close" onclick="closeSaved()">X</button>
+            <div id="saveditems">
+            <p id="nosaved">No saved values</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
