@@ -1,7 +1,7 @@
 {
     "name": "WebCalc",
     "version": "1.0.0",
-    "description": "A simple web calculator",
+    "description": "A dead simple web calculator",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#0e0e0e",
